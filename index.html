@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>KZCalc — калькуляторы Казахстана</title>
+  <meta name="description" content="Бесплатные калькуляторы Казахстана: зарплата, налоги, ИП, ТОО, НДС, ОСМС, пенсионные взносы, кредит, депозит, проценты и бытовые расчёты.">
+  <meta name="theme-color" content="#111827">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#home"><b>KZ</b>Calc</a>
+    <div class="navlinks">
+      <a href="#calculators">Калькуляторы</a>
+      <a href="#rates">Ставки 2026</a>
+      <a href="#about">О сайте</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="home" class="hero wrap">
+    <div class="hero-copy">
+      <div class="eyebrow">АКТУАЛЬНО НА 2026 ГОД</div>
+      <h1>Калькуляторы для жизни и бизнеса в Казахстане</h1>
+      <p>Зарплата, налоги, ИП, ТОО, НДС, пенсионные и социальные платежи, кредиты, ремонт и другие расчёты — в одном месте.</p>
+      <a class="primary" href="#calculators">Открыть калькуляторы</a>
+    </div>
+    <div class="hero-card">
+      <div class="mini-title">Основные показатели 2026</div>
+      <div class="stat"><span>МРП</span><b>4 325 ₸</b></div>
+      <div class="stat"><span>МЗП</span><b>85 000 ₸</b></div>
+      <div class="stat"><span>НДС</span><b>16%</b></div>
+      <div class="stat"><span>ОПВ работника</span><b>10%</b></div>
+    </div>
+  </section>
+
+  <section id="calculators" class="wrap section">
+    <div class="section-head">
+      <div><div class="eyebrow">ИНСТРУМЕНТЫ</div><h2>Выберите расчёт</h2></div>
+      <input id="search" class="search" placeholder="🔎 Найти калькулятор..." autocomplete="off">
+    </div>
+    <div id="cards" class="grid"></div>
+  </section>
+
+  <section id="calculator" class="wrap section hidden">
+    <button class="back" id="backBtn">← Все калькуляторы</button>
+    <div id="calculatorMount"></div>
+  </section>
+
+  <section id="rates" class="wrap section">
+    <div class="section-head"><div><div class="eyebrow">СПРАВОЧНИК</div><h2>Основные ставки и показатели 2026</h2></div></div>
+    <div class="rates-grid"></div>
+    <p class="source-note">Ставки и показатели на странице берутся из официальных материалов государственных органов Казахстана. Ссылки «Источник» ведут на соответствующие страницы. Перед фактической уплатой налогов проверяйте актуальные нормы, условия режима и решения местных маслихатов.</p>
+    <p class="source-note">Для расчётов, где законодательство предусматривает индивидуальные условия, результаты являются предварительными.</p>
+    <p class="source-note">Показатели используются как справочные параметры для калькуляторов. Перед реальной уплатой налогов проверяйте актуальные нормы и условия применения режима.</p>
+  </section>
+
+  <section id="about" class="wrap section about">
+    <div class="about-box">
+      <div class="eyebrow">KZCALC</div>
+      <h2>Сделано для простых ответов на сложные расчёты</h2>
+      <p>Сайт рассчитан на обычных пользователей, ИП, сотрудников и владельцев малого бизнеса. Формулы вынесены в JavaScript, а основные ставки — в одном объекте настроек, чтобы их было проще обновлять каждый год.</p>
+      <p><b>Важно:</b> сервис не является налоговым или юридическим консультантом. Налоговые расчёты зависят от статуса, режима, вычетов, вида деятельности и других условий.</p>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap footer-inner"><span>© 2026 KZCalc</span><span>Информационный сервис</span></div></footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
